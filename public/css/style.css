@@ -1,0 +1,124 @@
+/*Fondo svg y color acorde*/
+:root {
+    --verde-oscuro: #0A3223;
+    --verde-claro: #0BBD79;
+    --rojo-titulo: #c04200;
+    --blanco-letra: #f5f0ed;
+    --hover-btn:#cebb0d;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background: url("/public/img/base.png") no-repeat center center fixed; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-color: var(--verde-oscuro);
+    background-position: bottom;
+}
+
+
+.izq{
+    margin: 5rem 2rem 0 5rem;
+    width: 30vw;
+    background-color: none;
+    padding: 0rem;
+}
+
+fieldset{
+    border: transparent;
+    background-color: var(--verde-claro);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 15px 120px 15px 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: -2rem;
+}
+.der{
+    margin-top: 15rem;
+}
+.barra{
+    background-color: var(--verde-claro);
+    width: 50vw;
+    height: 20vh;
+    border-radius: 25px;
+}
+
+
+img{
+    margin: 0;
+}
+/*Titulo*/
+.nombre{
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: var(--rojo-titulo);
+}
+/*Input redondeado*/
+input[type=text]{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+     border-radius: 20px;
+     border: 1px solid #2d9fd9;
+     color: #a0d18c;
+     width: 250px;
+     height: 30px;
+     padding-left: 10px;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+    }
+    
+input[type=text]:focus {
+     outline: none;
+     border: 1px solid #a0d18c;
+     color: #2d9fd9;
+}
+/*Boton procesar*/
+#btn-procesar{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--blanco-letra);
+    background-color: var(--verde-oscuro);
+    border-radius: 10px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin-bottom:0rem;
+}
+
+#btn-procesar:hover{
+    color: var(--blanco-letra);
+    background-color: var(--hover-btn);
+    
+}
+
+#btn-procesar:active{
+    font-size: 1.5rem;
+}
+
+.cont-btn{
+    text-align: right;
+}
+
+/*Media queries Desktop y tablet*/
+
+@media only screen and (max-width: 480px) {
+    body {
+      flex-direction: column;
+    }
+  }
+  

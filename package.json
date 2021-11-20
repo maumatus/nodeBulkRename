@@ -1,0 +1,14 @@
+{
+  "name": "renom_grupoarchivos",
+  "version": "1.0.0",
+  "description": "App en Node para renombrar grandes secuencias de archivos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mau",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

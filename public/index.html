@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <title>Renombrador Secuencias</title>
+</head>
+
+<body>
+    <section class="izq">
+        <form action="/" method="post" class="form">
+            <section class="celdas">
+                    <fieldset>  
+                        <ul>
+                            <h2 class="nombre">Re-N</h2>
+                            <li>
+                                <input type="text" name="entrada" id="dir-inicio" required pattern="[a-zA-z0-9-/]+" placeholder="directorio inicio">
+                            </li>
+                            <li>
+                                <input type="text" name="salida" id="dir-renombrado" required pattern="[a-zA-z0-9-/]+" placeholder="directorio y nombre envío">
+                            </li>
+                            <p class="cont-btn"> <button type="submit" id="btn-procesar">P</button></p>
+                    </fieldset>
+            </section>
+        </form>
+    </section>
+
+    <section class="der">
+        <div class="barra"></div>
+    </section>
+
+    <!--Script-->
+        <script src="js/scripts.js"></script>
+        
+</body>
+
+</html>
