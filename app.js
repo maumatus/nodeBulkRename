@@ -13,24 +13,28 @@ app.listen(port,()=>console.log(`Ejecutando servidor en http://localhost:${port}
 //app.use(express.static('/public/'));
 
 app.use(express.urlencoded({
+
     extended: true
+    
 }));
 
 app.use(express.static(__dirname + '/public'));
 //Con método GET user obtiene index.html
 app.get("/",(req,res) => {
+
     res.sendFile(__dirname + '/public/index.html')
+
 });
 
 //Agregaremos un ícono-botón de carpeta que tomara el path para no escribir. Simplifica acceso a data.
-app.post('/',(req,res)=>{
-    
-    let dir_entrada = path.dirname('')
+app.post('/carpeta_carga',(req,res)=>{
+
+    let dir_entrada = req.path.dirname('')
     console.log(dir_entrada)
 
 });
 
-
+/*
 //Metodo POST. Envía directorio entrada y salida
 app.post("/",(req,res)=>{
 
@@ -74,7 +78,7 @@ app.post("/",(req,res)=>{
 
 });//Cierre método POST 
 
-
+*/
 
 //Yo tenía resuelto el como leer campos ingreso desde DOM, revisar e incluir. * OK
 //Falta diseñar interfaz-OK
