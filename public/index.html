@@ -9,30 +9,48 @@
 </head>
 
 <body>
-    <section class="izq">
-        <form action="/" method="post" class="form">
-            <section class="celdas">
-                    <fieldset>  
-                        <ul>
-                            <h2 class="nombre">Re-N</h2>
-                            <li>
-                                <input type="text" name="entrada" id="dir-inicio" pattern="[a-zA-z0-9-/]+" placeholder="directorio a copiar">
-                            </li>
-                            <li>
-                                <input type="text" name="salida" id="dir-renombrado" required pattern="[a-zA-z0-9-/]+" placeholder="directorio y nombre envío">
-                            </li>
-                            <p class="cont-btn"> <button type="submit" id="btn-procesar">P</button></p>
-                    </fieldset>
-            </section>
-        </form>
-    </section>
 
-    <section class="der">
-        <div class="barra"></div>
-    </section>
+    <div class="contenedor-principal">
+
+        <section class="contenedor-app">
+
+            <form action="/" method="post" class="form">
+
+                <section class="celdas">
+
+                        <fieldset>  
+
+                            <ul>
+                                <h2 class="nombre">Re-N</h2>
+                                <li>
+                                    <input type="text" name="entrada" id="dir-inicio" required pattern="[a-zA-z0-9-/]+" placeholder="directorio a copiar">
+                                </li>
+                                <li>
+                                    <input type="text" name="salida" id="dir-renombrado" required pattern="[a-zA-z0-9-/]+" placeholder="directorio y nombre envío">
+                                </li>
+                                <p class="cont-btn"> <button type="submit" id="btn-procesar">P</button></p>
+
+                        </fieldset>
+                        
+                </section>
+
+            </form>
+
+        </section>
+   
+
+    </div>
+
+    <footer class="texto-inferior">
+        <h5>Prototipo de un renombrador para secuencias de imágenes. Re-N V0.1
+            <br>Desarrollado por Mauricio Matus Furniel.
+            <br>Parte de Set de herramientas de ayuda para desarrollar animación Motion Graphics.
+            <br>Santiago de Chile/Río Bueno/Nov.2021.</h5>
+    </footer>
 
     <!--Script-->
-        <script src="js/scripts.js"></script>
+        <script src="/public/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         
 </body>
 
