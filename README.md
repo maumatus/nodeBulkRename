@@ -15,3 +15,5 @@ Actualementte es una app muy simple, dependencias nativas a NodeJS + Express y s
 Éxito si le sirve a alguien!!!.
 
 15-12-2021. Actualización: tuve un problema en la validación de ingreso directorio de inicio en el hmtl. El Dom comenzó a pedir un directorio en formato cuando había funcionado perfecto por lo menos 20 veces anteriores. Ver problema para mantener app.
+
+23-12-2021. Actaulización: Se hicieron aprox. 10+ pruebas de funcionamientos para respaldar y renombrar al mismo tiempo archivos desde tarjetas de memoria con fotografías. Cargas de 1gb a 2gb por proceso y la aplicación funcionó sin fallas. Único problema a solventar es cuando elimino archivos desde los convertidos y al renombrarlos nuevamente generó algunos duplicados, pero no corrompió ningun archivo.
