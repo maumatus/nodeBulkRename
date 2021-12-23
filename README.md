@@ -13,3 +13,5 @@ V.03 Drop Directory/arrastrar y soltar para mejorar la interactividad.
 Actualementte es una app muy simple, dependencias nativas a NodeJS + Express y solo hace el trabajo.
 
 Éxito si le sirve a alguien!!!.
+
+15-12-2021. Actualización: tuve un problema en la validación de ingreso directorio de inicio en el hmtl. El Dom comenzó a pedir un directorio en formato cuando había funcionado perfecto por lo menos 20 veces anteriores. Ver problema para mantener app.
